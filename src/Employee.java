@@ -13,4 +13,15 @@ public class Employee {
         this.task = task;
         System.out.println("Correct!");
     }
+
+    public Employee(String name, int salary) {
+        this.name = name;
+        this.salary = salary;
+        System.out.println(name + " - " + salary);
+    }
+
+    public Employee(String name) {
+        this(name, 1000);
+        System.out.println("Name: " + name);
+    }
 }
